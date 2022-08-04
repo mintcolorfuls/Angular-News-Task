@@ -178,3 +178,6 @@
   #button-1 .layer {
     transition: 0.3s ease all;
   }
+  .dropdown-toggle::after {
+    display: none;
+}
