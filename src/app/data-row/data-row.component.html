@@ -1,0 +1,30 @@
+<div class="row bg-header p-3" style="height: 62px;">
+    <div class="col-1">
+        <div class="toggle-button-cover">
+            <div class="button-cover" style="height: 40px;">
+              <div class="button r" id="button-1">
+                <input id="newsStatus" type="checkbox" class="checkbox" [checked]="status" (change)="onStatusEvent()" />
+                <div class="knobs"></div>
+                <div class="layer top"></div>
+              </div>
+            </div>
+          </div>
+    </div>
+    <div class="col-1 text-center">
+        <span class="">{{ newsData.NewsId }}</span>
+    </div>
+    <div class="col">
+        <span>{{ newsData.NameNews }}</span>
+    </div>
+    <div class="col-2">
+        <span>{{ newsData.UpdatedDate | date: 'dd/MM/yyyy'}}</span>
+    </div>
+    <div class="col-2">
+        <div class="d-flex justify-content-around w-100">
+            <i class="fa-solid fa-file-circle-exclamation info-icon shadow" (click)="onViewInfoClick()"></i>
+            <i class="fa-solid fa-pen-to-square edit-icon shadow"></i>
+            <i class="fa-solid fa-trash remove-icon shadow"></i>
+        </div>
+
+    </div>
+</div>
