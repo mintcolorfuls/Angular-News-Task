@@ -32,8 +32,12 @@
     color: white;
     width: 20%;
     border: none;
-    border-radius: 10px;
+    border-radius: 8px;
     padding: 5px;
+    transition: .3s;
+}
+.close-btn:hover {
+    background-color: #236292;
 }
 
 .form-switch .form-check-input {
